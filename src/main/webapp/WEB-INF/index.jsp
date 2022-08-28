@@ -12,12 +12,11 @@
 </head>
 <body>
 	<div class="container">
-		<div class="title">
-			<h1> Welcome to Amy's Fortune Teller </h1>
+		<h1> Welcome to Amy's Fortune Teller </h1>
+		<div class="textbox">
+			<a href="/fortuneteller">Go to the Fortune Teller</a>
 		</div>
-		<div class="main">
-			<p class="content"> <a href="http://amyzep.com/fortuneteller/">Go to the Fortune Teller</a> </p>
-		</div>
+		<p class="note"> This site is still very much a work in progress </p>
 	</div>
 </body>
 </html>
