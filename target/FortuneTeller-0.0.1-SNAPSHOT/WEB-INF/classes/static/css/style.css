@@ -1,58 +1,97 @@
+@charset "UTF-8";
+
 * {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    /* border-style: solid; */
 }
 
 body {
-	background-color: #EAD6CD
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    display:flex;
+    flex-direction: column;
+    margin: 25px;
+    padding: 10px;
+    align-items: center;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 85%;
-    background-color: #009AC7;
-    margin: 10px auto;
-    padding:10px;
+	background-color: #d4bffc
+}
+
+.textbox {
+    background-color: #9fc5f8;
+    border-style: solid;
+    padding: 15px 30px 15px 30px;
+    width: 65%;
 }
 
 img {
-	display: flex;
-	justify-content: center;
-	width: 80%;
+    width: 90%;
+    padding: 10px;
 }
 
-.title {
-    display: flex;
-    justify-content: center;
-    width: 85%;
-    padding: 5px;
+a {
+    font-size: 14px;
 }
 
 h1 {
-    display: flex;
-    font-size: 2.2em;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+p {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.disclaimerBox {
     justify-content: center;
-    width: 95%;
-    color: #EAD6CD;
+    padding-top: 25px;
 }
 
-.main {
+.note {
+    color: rgb(92, 87, 87);
+}
+
+label, input, button {
+	display: inline-block;
+    padding: 5px;
+}
+
+form {
+    border-style: solid;
     display: flex;
-    width: 85%;
-    justify-content: space-around;
-    background-color: #ecc8f3;
-    margin:10px;
-    padding:10px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: space-between;
+    padding: 15px 30px 15px 30px;
 }
 
-.content {
-    display: flex;
-    flex-direction: row;
-    margin:10px;
-    padding:10px;
+input[type=submit] {
+    margin-left: 70%;
+    background-color:#406ed9;
+    color:aliceblue;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 3px 3px 5px black;
 }
-
 

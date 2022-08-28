@@ -13,12 +13,18 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<h1>Fortune</h1>
 	<div class="container">
+		<h1> Your Fortune: </h1>
+		<div class="textbox">
 			<c:forEach var="fortune" items="${fortunes}">
-					<h1>${fortune.fortune}</h1>
-					<img src= "${fortune.image}" />
+				<h3>${fortune.fortune}</h3>
+				<img src= "${fortune.image}" />
 			</c:forEach>
+			</div>
+		<a href="/"> Go Back </a>
+		<div class="disclaimerBox">
+			<p class="note"> This site is still very much a work in progress </p>
+		</div>
 	</div>
 </body>
 </html>
