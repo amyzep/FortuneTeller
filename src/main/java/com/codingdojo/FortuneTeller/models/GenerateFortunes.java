@@ -1,7 +1,5 @@
 package com.codingdojo.FortuneTeller.models;
 
-import java.util.Random;
-
 public class GenerateFortunes {
 	private String fortune;
 	private String image;
