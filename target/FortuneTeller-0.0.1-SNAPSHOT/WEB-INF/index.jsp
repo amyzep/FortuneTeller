@@ -3,20 +3,32 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<!--<c:out value="someVariable"/> -->
 <!DOCTYPE html>
 <head>
-<meta charset="UTF-8">
-<title>Amy's Fortune Teller</title>
-<link rel="stylesheet" href="/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="Project Website">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Amy Zeppenfeld">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome</title>
+	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<div class="container">
-		<h1> Welcome to Amy's Fortune Teller </h1>
-		<div class="textbox">
-			<a href="/fortuneteller">Go to the Fortune Teller</a>
+	<div class="mainContentContainer">
+		<h1> Welcome! </h1>
+		<div class="contentBoxHomePage">
+			<div class="contentCard">
+				<img src="/images/dice.jpg" />
+				<a href="/fortuneteller">Get a Random Fortune</a>
+			</div>
+			<div class="contentCard">
+				<img src="/images/personalfortune.jpg" />
+				<a href="/personal_fortune"> Get a Personalized Fortune </a>
+			</div>
 		</div>
-		<p class="note"> This site is still very much a work in progress </p>
+		<div class="disclaimerBox">
+			<p class="note"> This site is still a work in progress. All information is for entertainment only </p>
+		</div>	
 	</div>
 </body>
 </html>
