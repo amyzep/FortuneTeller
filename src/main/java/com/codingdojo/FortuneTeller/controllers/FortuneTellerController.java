@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.codingdojo.FortuneTeller.models.Fortune;
 import com.codingdojo.FortuneTeller.models.GenerateFortunes;
@@ -57,8 +57,14 @@ public class FortuneTellerController {
 		@RequestParam("hobby") String hobby,
 		@RequestParam("thing") String thing,
 		@RequestParam("message") String message,
-		HttpSession session
+		HttpSession session,
+		RedirectAttributes redirectAttributes
 		) {
+		if( number < 5 || number > 25 || city == "" || person ==  "" || hobby == "" || thing == "" || message == "") {
+			redirectAttributes.addFlashAttribute("error", "Please make sure all fields are filled out");
+			return "redirect:/personal_fortune";
+		}
+		
 		String resultFortune = String.format(
 				"In %s years, you will live in %s with %s as your roommate. You will be making a living from %s. The next time you see a %s, you will have good luck. Also, %s.", 
 				number, city, person, hobby, thing, message);
@@ -66,4 +72,5 @@ public class FortuneTellerController {
 		session.setAttribute("resultFortune", resultFortune);
 		return "redirect:/personal_fortune/show";
 	}
+	
 }
