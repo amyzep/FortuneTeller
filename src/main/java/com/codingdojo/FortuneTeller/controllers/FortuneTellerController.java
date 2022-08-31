@@ -2,12 +2,12 @@ package com.codingdojo.FortuneTeller.controllers;
 
 import java.util.ArrayList;
 import java.util.Random;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import javax.servlet.http.HttpSession;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -51,7 +51,7 @@ public class FortuneTellerController {
 	
 	@PostMapping("/processFormData")
 	public String process(
-		@RequestParam("number") int number,
+		@RequestParam("number") Integer number,
 		@RequestParam("city") String city,
 		@RequestParam("person") String person,
 		@RequestParam("hobby") String hobby,
@@ -60,7 +60,11 @@ public class FortuneTellerController {
 		HttpSession session,
 		RedirectAttributes redirectAttributes
 		) {
-		if( number < 5 || number > 25 || city == "" || person ==  "" || hobby == "" || thing == "" || message == "") {
+		if (number == null || number < 5 || number > 25 ) { 
+			redirectAttributes.addFlashAttribute("error", "Number must be between 5 and 25");
+			return "redirect:/personal_fortune";
+		}
+		if( city.length() < 1 || person.length() < 1 || hobby.length() < 1 || thing.length() < 1 || message.length() < 1) {
 			redirectAttributes.addFlashAttribute("error", "Please make sure all fields are filled out");
 			return "redirect:/personal_fortune";
 		}
@@ -72,5 +76,5 @@ public class FortuneTellerController {
 		session.setAttribute("resultFortune", resultFortune);
 		return "redirect:/personal_fortune/show";
 	}
-	
+
 }
