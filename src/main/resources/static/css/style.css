@@ -12,35 +12,41 @@ body {
 }
 
 div {
+	/* divs */
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.mainContentContainer {
+.contentBoxHomePage {
+	/* specific content box made for homepage (/index) */
+    flex-direction: row;
+    background-color: #9fc5f8;
+    border-style: solid;
+    margin: 20px;
+    padding: 30px;
+}
+
+.contentContainer {
+	/* Container box for all content on page */
 	background-color: #d4bffc;
 }
 
 .contentBox {
+	/* general box for content */
     background-color: #9fc5f8;
     border-style: solid;
     padding: 30px;
     width: 65%;
 }
 
-.contentBoxHomePage {
-    flex-direction: row;
-    background-color: #9fc5f8;
-    border-style: solid;
-    margin: 10px;
-    padding: 10px;
-}
-
 .contentCard {
+	/* general box for content - small cards (box within box) */
     height: 30%;
 }
 
 img {
+	/* images */
     width: 75%;
     border-style: solid;
     border-color: antiquewhite;
@@ -49,11 +55,13 @@ img {
 }
 
 a {
+	/* links */
     font-size: .8em;
     padding: 5px;
 }
 
 h1 {
+	/* headings and titles */
     font-size: 3.5em;
     text-align: center;
     padding: 10px;
@@ -65,6 +73,7 @@ h1 {
 }
 
 h3 {
+	/* large text */
     font-size: 2em;
     text-align: center;
     font-style: normal;
@@ -72,27 +81,35 @@ h3 {
 }
 
 p {
+	/* small text */
     font-size: .75em;
     font-style: italic;
     text-align: center;
 }
-
-.disclaimerBox {
+.textBox {
+	/* box for general text */
+    margin: 10px;
+    background-color: #6871E7;
+    border-radius: 5px;
+    border-color: antiquewhite;
+    border-style: solid;
     justify-content: center;
     padding: 25px;
-    
+}
+
+.disclaimerBox {
+	/* box for disclaimer text */
+    justify-content: center;
+    padding: 25px;
 }
 
 .note {
+	/* notes, disclaimers, footnotes, small print */
     color: rgb(92, 87, 87);
 }
 
-label, input, button {
-	display: inline-block;
-    padding: 5px;
-}
-
 form {
+	/* forms */
     border-style: solid;
     background-color: rgb(156, 233, 220);
     display: flex;
@@ -102,7 +119,14 @@ form {
     padding: 15px 30px 15px 30px;
 }
 
+label, input, button {
+	/* form spacing */
+	display: inline-block;
+    padding: 5px;
+}
+
 input[type=submit] {
+	/* submit button */
     margin-left: 70%;
     background-color:#406ed9;
     color:aliceblue;
@@ -115,7 +139,13 @@ input[type=submit] {
 }
 
 textarea {
+	/* text area in forms*/
     padding: 10px;
     text-align: left;
+}
+
+.error {
+	/* small error text */
+	color: red;
 }
 

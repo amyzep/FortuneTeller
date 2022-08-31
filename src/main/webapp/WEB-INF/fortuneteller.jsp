@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<div class="mainContentContainer">
+	<div class="contentContainer">
 		<h1> Your Fortune: </h1>
 		<div class="contentBox">
 			<c:forEach var="fortune" items="${fortunes}">
@@ -25,6 +25,10 @@
 			</c:forEach>
 			</div>
 		<a href="/"> Go Back </a>
+		<div class="textBox">
+			<p> Want to see how this site works? </p>
+			<a href="https://github.com/amyzep/FortuneTeller" target="_blank"> Check out my GitHub</a>
+		</div>
 		<div class="disclaimerBox">
 			<p class="note"> This site is still a work in progress. All information is for entertainment only </p>
 		</div>
