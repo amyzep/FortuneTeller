@@ -1,1 +1,21 @@
+AmyZep.com
+Spring Boot Web Application hosted via AWS
 
+Check out the Controller:
+- https://github.com/amyzep/FortuneTeller/tree/main/src/main/java/com/codingdojo/FortuneTeller/controllers
+
+Random Fortune Generator Code (Java):
+- https://github.com/amyzep/FortuneTeller/tree/main/src/main/java/com/codingdojo/FortuneTeller/models
+
+JSP pages (HTML):
+- https://github.com/amyzep/FortuneTeller/tree/main/src/main/webapp/WEB-INF
+
+Dependencies (POM.XML):
+- https://github.com/amyzep/FortuneTeller/blob/main/pom.xml
+
+Custom CSS:
+- https://github.com/amyzep/FortuneTeller/blob/main/src/main/resources/static/css/style.css
+
+Images:
+- https://github.com/amyzep/FortuneTeller/tree/main/src/main/resources/static/images
+   - (all images from pexels.com)
