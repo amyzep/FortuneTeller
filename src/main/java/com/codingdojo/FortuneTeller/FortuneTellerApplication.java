@@ -10,7 +10,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
-// 1. Annotation
 @RestController
 public class FortuneTellerApplication {
 	public static void main(String[] args) {

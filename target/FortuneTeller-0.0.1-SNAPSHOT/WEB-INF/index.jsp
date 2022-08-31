@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-	<div class="mainContentContainer">
+	<div class="contentContainer">
 		<h1> Welcome! </h1>
 		<div class="contentBoxHomePage">
 			<div class="contentCard">
@@ -25,6 +25,10 @@
 				<img src="/images/personalfortune.jpg" />
 				<a href="/personal_fortune"> Get a Personalized Fortune </a>
 			</div>
+		</div>
+		<div class="textBox">
+			<p> Want to see how this site works? </p>
+			<a href="https://github.com/amyzep/FortuneTeller" target="_blank"> Check out my GitHub</a>
 		</div>
 		<div class="disclaimerBox">
 			<p class="note"> This site is still a work in progress. All information is for entertainment only </p>
