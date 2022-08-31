@@ -1,7 +1,7 @@
 https://www.AmyZep.com
 Spring Boot Web Application hosted via AWS
 
-Check out the Controller:
+Check out the Controller (Java):
 - https://github.com/amyzep/FortuneTeller/tree/main/src/main/java/com/codingdojo/FortuneTeller/controllers
 
 Random Fortune Generator Code (Java):
