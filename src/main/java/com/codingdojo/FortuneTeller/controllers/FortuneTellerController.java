@@ -28,7 +28,7 @@ public class FortuneTellerController {
 	 public String fortune(Model model) {
 
 		ArrayList<Fortune> fortunes = new ArrayList<Fortune>();
-	    int number = random.nextInt(10);
+	    int number = random.nextInt(11);
         GenerateFortunes newFortune = new GenerateFortunes(number);
 	    fortunes.add(new Fortune(newFortune.getFortune(), newFortune.getImage()));
 		model.addAttribute("fortunes", fortunes);

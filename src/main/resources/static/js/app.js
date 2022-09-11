@@ -6,5 +6,5 @@ function removeLoader(){
   // hide the loader
   loader.style = 'display: none;';
   },
-             3500);  
+          3500);  
 }

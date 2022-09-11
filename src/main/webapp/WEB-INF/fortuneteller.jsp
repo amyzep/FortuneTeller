@@ -5,39 +5,39 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="description" content="Project Website">
-	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<meta name="author" content="Amy Zeppenfeld">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Random Fortune</title>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/css/style.css">
-	<script src="/js/app.js"></script>
-</head>
-<body onload="removeLoader();">
-   	<div id="loader">
-    	<p id="loader-content"> Reading Your Fortune...</p>
-    	<img id="paperfortuneteller" src= "/images/paperfortuneteller-loading.gif" />
- 	</div>   
-	<div class="contentContainer">
-		<h1> Your Fortune: </h1>
-		<div class="contentBox">
-			<c:forEach var="fortune" items="${fortunes}">
-				<h3>${fortune.fortune}</h3>
-				<img src= "${fortune.image}" />
-			</c:forEach>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Project Website">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Amy Zeppenfeld">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Random Fortune</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="/css/style.css">
+		<script src="/js/app.js"></script>
+	</head>
+	<body onload="removeLoader();">
+		<div id="loader">
+			<p id="loader-content"> Reading Your Fortune...</p>
+			<img id="paperfortuneteller" src= "/images/paperfortuneteller-loading.gif" />
+		</div>   
+		<div class="contentContainer">
+			<h1> Your Fortune: </h1>
+			<div class="contentBox">
+				<c:forEach var="fortune" items="${fortunes}">
+					<h3>${fortune.fortune}</h3>
+					<img src= "${fortune.image}" />
+				</c:forEach>
+			</div>
+			<a href="/"> Go Back </a>
+			<div class="textBox">
+				<p> Want to see how this site works? </p>
+				<a href="https://github.com/amyzep/FortuneTeller" target="_blank"> Check out my GitHub</a>
+			</div>
+			<div class="disclaimerBox">
+				<p class="note"> This site is still a work in progress. All information is for entertainment only </p>
+			</div>
 		</div>
-		<a href="/"> Go Back </a>
-		<div class="textBox">
-			<p> Want to see how this site works? </p>
-			<a href="https://github.com/amyzep/FortuneTeller" target="_blank"> Check out my GitHub</a>
-		</div>
-		<div class="disclaimerBox">
-			<p class="note"> This site is still a work in progress. All information is for entertainment only </p>
-		</div>
-	</div>
-</body>
+	</body>
 </html>
