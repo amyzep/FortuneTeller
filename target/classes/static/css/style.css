@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* border-style: solid; */
 }
 
@@ -47,7 +47,7 @@ div {
 
 img {
 	/* images */
-    width: 75%;
+    width: 60%;
     border-style: solid;
     border-color: antiquewhite;
     margin: 15px;
@@ -86,6 +86,7 @@ p {
     font-style: italic;
     text-align: center;
 }
+
 .textBox {
 	/* box for general text */
     margin: 10px;
@@ -149,3 +150,31 @@ textarea {
 	color: red;
 }
 
+#loader {
+    /* show while loading */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: fixed;
+    background-color: #62a0ea;
+    border-style: none;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+}
+
+#loader p {  
+	/* show text while loading */
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+
+#paperfortuneteller {
+    /* animated fortune teller */
+	width: 30%;
+	border-style: none;
+}
